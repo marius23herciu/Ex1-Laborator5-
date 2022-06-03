@@ -33,6 +33,10 @@ namespace Ex1_Laborator5_
         static int PozitieSubstring(string sir1, string sir2)
         {
             int pozitie=0;
+            if (sir2.Length==sir1.Length)
+            {
+                return pozitie;
+            }
             if (sir1.Length>sir2.Length)
             {
                 pozitie= sir1.IndexOf(sir2);
